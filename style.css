@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  /* font-family: "Roboto Condensed", sans-serif; */
+  background: #0d0f12;
+  color: #f3f3f3;
+}
+
+#wrapper {
+  min-height: 100vh;
+  width: 100wh;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  border: #2c3035 1px solid;
+}
+
+input {
+  margin-bottom: 1.5rem;
+  padding: 0.7rem 1rem;
+  /* width: 100%; */
+  /* height: 40px; */
+  background: #0d0f12;
+  color: #f3f3f3;
+  border: 1px solid #515358;
+  border-radius: 2px;
+}
+
+/* buttons */
+.btn {
+  /* margin: 1rem auto; */
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-blue {
+  background: #0679b3;
+}
+
+.btn-dark {
+  background: #2c3035;
+  margin-top: 1.5rem;
+}
+
+/* Links */
+a {
+  color: #1382ba;
+  text-decoration: none;
+}
+
+a:hover,
+#left footer a:hover {
+  color: #006ba1;
+  text-decoration: underline;
+}
+
+/* Left */
+#left {
+  width: 40%;
+  /* float: left; */
+}
+
+#signin {
+  width: 60%;
+  margin: 4.5rem auto;
+}
+
+#signin .logo {
+  width: 303px;
+  height: 63px;
+  margin: auto;
+}
+
+#signin .logo img {
+  width: 100%;
+}
+
+#signin form {
+  margin: 3.5rem 0 0;
+}
+
+#signin input {
+  width: 100%;
+}
+
+#signin .links {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  /* font-weight: bold; */
+}
+
+#signin .links a {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+#left footer {
+  width: 100%;
+  margin: 2.5rem 0 0 0;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #b7b7b8;
+}
+
+#left footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+#right {
+  width: 60%;
+  position: relative;
+}
+
+#right .banner {
+  background-image: url("./img/bg-gtm-2020.png");
+  background-color: black;
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* justify-content: flex-start; */
+}
+#right .banner-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+#right .banner-text img {
+  /* display: inline-block; */
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+#right .banner-text button {
+  margin-bottom: 0px;
+  padding: 12px 80px;
+  min-width: unset;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s all;
+  border-radius: 2px;
+  background: linear-gradient(to right, #f05a28, #ec008c, #f05a28);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#right .bottom-logo {
+  height: 35px;
+  max-width: 150px;
+  position: absolute;
+  right: 2.5rem;
+  bottom: 2.5rem;
+}
+
+#right .bottom-logo img {
+  width: 100%;
+}
+
+@media (max-width: 1366px) {
+  #left {
+    width: 50%;
+  }
+  #right {
+    width: 50%;
+  }
+}
+
+@media (max-width: 960px) {
+  #signin .logo {
+    max-width: 250px;
+    max-height: 63px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  #left {
+    width: 100%;
+  }
+  #right {
+    display: none;
+  }
+
+  #signin {
+    width: 80%;
+    margin: 1.5rem auto;
+  }
+
+  #signin .links a {
+    display: block;
+  }
+}
